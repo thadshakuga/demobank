@@ -1,7 +1,38 @@
 <mvc:View controllerName="com.sap.demobank.controller.App"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <App id="app">
+        <Page id="page" title="{i18n>appTitle}">
+
+            <headerContent>
+                <Button id="refresh" type="Emphasized" text="{i18n>home}" />
+            </headerContent>
+            <content>
+                <core:Fragment id="frag1" fragmentName="com.sap.demobank.view.fragments.BankDetails" type="XML"/>
+
+                <Button id="openBankDetails" type="Emphasized" text="{i18n>findMore}" class="sapUiSmallMarginBegin" 
+                press=".onOpenBankDetails" />
+                <!--
+                <VBox id="vBox1" class="sapUiSmallMargin">
+                    <Title text="My Bank Details" id="accDetails" level="H1" />
+
+                    <HBox id="hBox1">
+                        <Label text="Bank Account Number" id="bankAccNum" class="sapUiSmallMarginEnd"/>
+                        <Text text="118020*****" id="bankAccVal" class="sapuiSmallMarginBegin"/>
+                    </HBox>
+                    <HBox id="hBox2">
+                        <Label text="Account Holder name" id="accHolder" class="sapUiSmallMarginEnd"/>
+                        <Text text="Thadsayini kuganendra" id="accHolderVal" />
+                    </HBox>
+                    <HBox id="hBox3">
+                        <Label text="Account Balance" id="accBalance" class="sapUiSmallMarginEnd"/>
+                        <Text text="10,101.98" id="accBalanceVal"/>
+                    </HBox>
+                </VBox>
+                -->
+            </content>
+        </Page>
+    </App>
 </mvc:View>
