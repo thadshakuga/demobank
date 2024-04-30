@@ -4,15 +4,15 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core">
     <App id="app">
-        <Page id="page" title="Account Details">
+        <Page id="page" title="{i18n>appTitle}">
 
             <headerContent>
-                <Button id="refresh" type="Emphasized" text="Refresh" />
+                <Button id="refresh" type="Emphasized" text="{i18n>home}" />
             </headerContent>
             <content>
                 <core:Fragment id="frag1" fragmentName="com.sap.demobank.view.fragments.BankDetails" type="XML"/>
 
-                <Button id="openBankDetails" type="Emphasized" text="Find More Details" class="sapUiSmallMarginBegin" 
+                <Button id="openBankDetails" type="Emphasized" text="{i18n>findMore}" class="sapUiSmallMarginBegin" 
                 press=".onOpenBankDetails" />
                 <!--
                 <VBox id="vBox1" class="sapUiSmallMargin">

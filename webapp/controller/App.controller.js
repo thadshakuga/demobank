@@ -15,7 +15,18 @@ sap.ui.define([
 
         return Controller.extend("com.sap.demobank.controller.App", {
             onInit: function () {
+            //alert("This is on Init Function Block")
 
+            //   debugger
+            //Check browser lanquage and set the text
+                var appLan = navigator.language;
+                var i18nLa;
+                if (appLan == "es")
+                    i18nLa = "i18n_es";
+                else
+                    i18nLa = "i18n";
+                var i18nModel = this.getOwnerComponent().getModel(i18nLa);
+                this.getOwnerComponent().setModel(i18nModel, "i18n")
             },
             onOpenBankDetails: function () {
                 //create easily
@@ -33,7 +44,7 @@ sap.ui.define([
                     }
                 );
             },
-            onCloseBankDetails:function(){
+            onCloseBankDetails: function () {
                 this.byId("moreBankDetails").close();
             }
 

@@ -4,23 +4,23 @@
     <Dialog id="moreBankDetails" title="Confidential Details">
         <VBox id="vBox1" class="sapUiSmallMargin">
             <HBox id="hBox1">
-                <Label text="Bank Account Number" id="bankAccNum" class="sapUiSmallMarginEnd"/>
+                <Label text="{i18n>accNum}" id="bankAccNum" class="sapUiSmallMarginEnd"/>
                 <Text text="118-0205-6454" id="bankAccVal" class="sapuiSmallMarginBegin"/>
             </HBox>
             <HBox id="hBox2">
-                <Label text="Account Holder name" id="accHolder" class="sapUiSmallMarginEnd"/>
+                <Label text="{i18n>accHolder}" id="accHolder" class="sapUiSmallMarginEnd"/>
                 <Text text="Thadsayini kuganendra" id="accHolderVal" />
             </HBox>
             <HBox id="hBox3">
-                <Label text="Bank name" id="bankName" class="sapUiSmallMarginEnd"/>
+                <Label text="{i18n>bankName}" id="bankName" class="sapUiSmallMarginEnd"/>
                 <Text text="Commercial Bank" id="bankNameVal"/>
             </HBox>
             <HBox id="hBox4">
-                <Label text="Branch name" id="branchName" class="sapUiSmallMarginEnd"/>
+                <Label text="{i18n>branch}" id="branchName" class="sapUiSmallMarginEnd"/>
                 <Text text="Nelliady" id="branchNameVal" />
             </HBox>
             <HBox id="hBox5">
-                <Label text="Account Balance" id="accBal" class="sapUiSmallMarginEnd"/>
+                <Label text="{i18n>accBalance}" id="accBal" class="sapUiSmallMarginEnd"/>
                 <Text text="22,675.67" id="accBalVal"/>
             </HBox>
         </VBox>

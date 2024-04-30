@@ -3,19 +3,19 @@
     xmlns = "sap.m">
 
     <VBox id="vBox1" class="sapUiSmallMargin">
-        <Title text="My Bank Details" id="accDetails" level="H1" />
+        <Title text="{i18n>accDetails}" id="accDetails" level="H1" />
 
         <HBox id="hBox1">
-            <Label text="Bank Account Number" id="bankAccNum" class="sapUiSmallMarginEnd"/>
-            <Text text="118020*****" id="bankAccVal" class="sapuiSmallMarginBegin"/>
+            <Label text="{i18n>accNum}" id="bankAccNum" class="sapUiSmallMarginEnd"/>
+            <Text text="{i18n>accNumVal}" id="bankAccVal" class="sapuiSmallMarginBegin"/>
         </HBox>
         <HBox id="hBox2">
-            <Label text="Account Holder name" id="accHolder" class="sapUiSmallMarginEnd"/>
-            <Text text="Thadsayini kuganendra" id="accHolderVal" />
+            <Label text="{i18n>accHolder}" id="accHolder" class="sapUiSmallMarginEnd"/>
+            <Text text="{i18n>accHolderVal}" id="accHolderVal" />
         </HBox>
         <HBox id="hBox3">
-            <Label text="Bank name" id="bankName" class="sapUiSmallMarginEnd"/>
-            <Text text="Commercial Bank" id="bankNameVal"/>
+            <Label text="{i18n>bankName}" id="bankName" class="sapUiSmallMarginEnd"/>
+            <Text text="{i18n>bankNameVal}" id="bankNameVal"/>
         </HBox>
     </VBox>
 
