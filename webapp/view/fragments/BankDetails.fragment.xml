@@ -1,22 +1,47 @@
 <core:FragmentDefinition 
     xmlns:core = "sap.ui.core" 
     xmlns = "sap.m">
+    <Panel id="pAccDetails" expandable="false" headerText="Account Details" width="auto" class="sapUiResponsiveMargin">
+        <content>
+            <HBox id="hBox5">
+                <Avatar id="aUser" src="{/Woman01}" displaySize="XL" showBorder="true" press="onPress"/>
 
-    <VBox id="vBox1" class="sapUiSmallMargin">
-        <Title text="{i18n>accDetails}" id="accDetails" level="H1" />
+                <VBox id="vBox1" class="sapUiSmallMargin sapUiLargeMarginBegin">
+                    <Title text="{i18n>accDetails}" id="accDetails" level="H1" />
 
-        <HBox id="hBox1">
-            <Label text="{i18n>accNum}" id="bankAccNum" class="sapUiSmallMarginEnd"/>
-            <Text text="{i18n>accNumVal}" id="bankAccVal" class="sapuiSmallMarginBegin"/>
-        </HBox>
-        <HBox id="hBox2">
-            <Label text="{i18n>accHolder}" id="accHolder" class="sapUiSmallMarginEnd"/>
-            <Text text="{i18n>accHolderVal}" id="accHolderVal" />
-        </HBox>
-        <HBox id="hBox3">
-            <Label text="{i18n>bankName}" id="bankName" class="sapUiSmallMarginEnd"/>
-            <Text text="{i18n>bankNameVal}" id="bankNameVal"/>
-        </HBox>
-    </VBox>
+                    <HBox id="hBox1">
+                        <Label text="{i18n>accNum}" id="bankAccNum" class="sapUiSmallMarginEnd"/>
+                        <Text text="{i18n>accNumVal}" id="bankAccVal" class="sapuiSmallMarginBegin"/>
+                    </HBox>
+                    <HBox id="hBox2">
+                        <Label text="{i18n>accHolder}" id="accHolder" class="sapUiSmallMarginEnd"/>
+                        <Text text="{i18n>accHolderVal}" id="accHolderVal" />
+                    </HBox>
+                    <HBox id="hBox3">
+                        <Label text="{i18n>bankName}" id="bankName" class="sapUiSmallMarginEnd"/>
+                        <Text text="{i18n>bankNameVal}" id="bankNameVal"/>
+                    </HBox>
+                    <HBox id="hBox4">
+                        <Button id="openBankDetails" type="Emphasized" text="{i18n>findMore}" press=".onOpenBankDetails" />
+                    </HBox>
+                </VBox>
+            </HBox>
+        </content>
+
+    </Panel>
+    <Panel id="pCardDetails" expandable="true" headerText="Card Details" width="auto" class="sapUiResponsiveMargin">
+        <content>
+            <List id="myList" items="" width="50%">
+                <items>
+                    <StandardListItem id="sListOne" title="Master Card 2078-2690-4220" description="Validity : 12/27" icon="sap-icon://credit-card" iconInset="false" highlight="Success" info="Active" infoState="Success" infoStateInverted="true" />
+                    <StandardListItem id="sListTwo" title="Visa Card 5637-2673-4780" description="Validity : 12/30" icon="sap-icon://credit-card" iconInset="false" highlight="Warning" info="In Process" infoState="Warning" infoStateInverted="true" />
+                    <StandardListItem id="sListThree" title="Credit Card 2067-9738-7863" description="Validity : 03/24" icon="sap-icon://credit-card" iconInset="false" highlight="Error" info="Expired" infoState="Error" infoStateInverted="true" />
+
+                
+                
+                </items>
+            </List>
+        </content>
+    </Panel>
 
 </core:FragmentDefinition>
